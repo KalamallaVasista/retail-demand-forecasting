@@ -1,8 +1,8 @@
-pandas
-numpy
-scikit-learn
-lightgbm
-prophet
-streamlit
-google-cloud-bigquery
-dbt-bigquery
+pandas==3.0.5
+numpy==2.5.3
+scikit-learn==1.9.1
+lightgbm==4.7.0
+prophet==1.4.0
+streamlit==1.63.0
+google-cloud-bigquery==3.45.1
+dbt-bigquery==1.12.0
