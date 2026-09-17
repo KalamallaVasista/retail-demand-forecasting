@@ -8,3 +8,4 @@ models/*.pkl
 .streamlit/secrets.toml
 .DS_Store
 Thumbs.db
+data/processed/
