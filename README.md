@@ -40,4 +40,25 @@ The objective is to:
 
 ## Development Status
 
-Day 1 - Project initialized.
+- Day 1 - Project initialized with Git, GitHub, and required project structure.
+- Day 2 - Python virtual environment and project dependencies configured.
+- Day 3 - M5 Forecasting dataset loaded and initial data inspection completed.
+- Day 4 - Data quality validation and product, store, and date dimensions created.
+- Day 5 - Sales and price fact tables created and validated using memory-efficient processing.
+- Day 6 - Google Cloud and BigQuery warehouse configured and analytical tables loaded.
+
+## BigQuery Data Warehouse
+
+Google Cloud Project: `vasista-retail-demand-2026`
+
+BigQuery Dataset: `retail_demand`
+
+| Table | Rows |
+|---|---:|
+| `dim_product` | 3,049 |
+| `dim_store` | 10 |
+| `dim_date` | 1,969 |
+| `fact_prices` | 6,841,121 |
+| `fact_sales` | 59,181,090 |
+
+The warehouse follows a dimensional structure containing product, store, and date dimensions together with sales and weekly pricing fact tables.
