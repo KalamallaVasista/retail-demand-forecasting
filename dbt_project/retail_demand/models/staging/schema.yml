@@ -1,0 +1,80 @@
+version: 2
+
+models:
+  - name: stg_dim_product
+    columns:
+      - name: item_id
+        data_tests:
+          - not_null
+          - unique
+
+      - name: dept_id
+        data_tests:
+          - not_null
+
+      - name: cat_id
+        data_tests:
+          - not_null
+
+  - name: stg_dim_store
+    columns:
+      - name: store_id
+        data_tests:
+          - not_null
+          - unique
+
+      - name: state_id
+        data_tests:
+          - not_null
+
+  - name: stg_dim_date
+    columns:
+      - name: date
+        data_tests:
+          - not_null
+          - unique
+
+      - name: d
+        data_tests:
+          - not_null
+          - unique
+
+      - name: wm_yr_wk
+        data_tests:
+          - not_null
+
+  - name: stg_fact_prices
+    columns:
+      - name: store_id
+        data_tests:
+          - not_null
+
+      - name: item_id
+        data_tests:
+          - not_null
+
+      - name: wm_yr_wk
+        data_tests:
+          - not_null
+
+      - name: sell_price
+        data_tests:
+          - not_null
+
+  - name: stg_fact_sales
+    columns:
+      - name: item_id
+        data_tests:
+          - not_null
+
+      - name: store_id
+        data_tests:
+          - not_null
+
+      - name: d
+        data_tests:
+          - not_null
+
+      - name: units_sold
+        data_tests:
+          - not_null

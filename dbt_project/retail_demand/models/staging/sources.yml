@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: retail_demand_source
+    database: vasista-retail-demand-2026
+    schema: retail_demand
+
+    tables:
+      - name: dim_product
+      - name: dim_store
+      - name: dim_date
+      - name: fact_prices
+      - name: fact_sales
