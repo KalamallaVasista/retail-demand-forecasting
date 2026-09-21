@@ -1,0 +1,38 @@
+version: 2
+
+models:
+  - name: int_daily_demand
+    description: "Daily item-store demand enriched with product, store, calendar, event, SNAP, and weekly selling price information."
+
+    columns:
+      - name: item_id
+        data_tests:
+          - not_null
+
+      - name: store_id
+        data_tests:
+          - not_null
+
+      - name: date
+        data_tests:
+          - not_null
+
+      - name: d
+        data_tests:
+          - not_null
+
+      - name: units_sold
+        data_tests:
+          - not_null
+
+      - name: dept_id
+        data_tests:
+          - not_null
+
+      - name: cat_id
+        data_tests:
+          - not_null
+
+      - name: state_id
+        data_tests:
+          - not_null

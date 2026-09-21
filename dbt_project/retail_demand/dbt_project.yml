@@ -18,3 +18,5 @@ models:
   retail_demand:
     staging:
       +materialized: view
+    intermediate:
+      +materialized: view
