@@ -36,3 +36,23 @@ models:
       - name: state_id
         data_tests:
           - not_null
+
+  - name: int_demand_features
+    description: "Forecasting feature dataset containing historical demand lags and rolling demand averages."
+
+    columns:
+      - name: item_id
+        data_tests:
+          - not_null
+
+      - name: store_id
+        data_tests:
+          - not_null
+
+      - name: date
+        data_tests:
+          - not_null
+
+      - name: units_sold
+        data_tests:
+          - not_null
