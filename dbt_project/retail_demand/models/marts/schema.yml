@@ -1,0 +1,42 @@
+version: 2
+
+models:
+  - name: fct_forecasting_dataset
+    description: "Model-ready retail demand forecasting dataset with complete lag and rolling demand features."
+
+    columns:
+      - name: item_id
+        data_tests:
+          - not_null
+
+      - name: store_id
+        data_tests:
+          - not_null
+
+      - name: date
+        data_tests:
+          - not_null
+
+      - name: units_sold
+        data_tests:
+          - not_null
+
+      - name: lag_1
+        data_tests:
+          - not_null
+
+      - name: lag_7
+        data_tests:
+          - not_null
+
+      - name: lag_28
+        data_tests:
+          - not_null
+
+      - name: rolling_mean_7
+        data_tests:
+          - not_null
+
+      - name: rolling_mean_28
+        data_tests:
+          - not_null
